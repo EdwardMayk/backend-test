@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  go-api:
+    build:
+      context: ./go-api
+      dockerfile: Dockerfile
+    container_name: go-api
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=${PORT}
+      - NODE_API_URL=${NODE_API_URL}
+      - JWT_SECRET=${JWT_SECRET}
+      - AUTH_USERNAME=${AUTH_USERNAME}
+      - AUTH_PASSWORD=${AUTH_PASSWORD}
+    networks:
+      - matrix-network
+    depends_on:
+      - node-api
+
+  node-api:
+    build:
+      context: ./node-api
+      dockerfile: Dockerfile
+    container_name: node-api
+    environment:
+      - PORT=3000
+      - JWT_SECRET=${JWT_SECRET}
+    networks:
+      - matrix-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: matrix-frontend
+    ports:
+      - "80:80"
+    environment:
+      - API_BASE_URL=${API_BASE_URL}
+    networks:
+      - matrix-network
+    depends_on:
+      - go-api
+
+networks:
+  matrix-network:
+    driver: bridge

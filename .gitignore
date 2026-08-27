@@ -1,0 +1,26 @@
+.env
+.env.local
+.env.*.local
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node
+node-api/node_modules/
+node-api/dist/
+node-api/npm-debug.log*
+node-api/yarn-debug.log*
+node-api/yarn-error.log*
+node-api/.pnpm-debug.log*
+
+# Go
+go-api/main
+go-api/*.exe
+go-api/*.test
+go-api/*.prof
+go-api/vendor/
