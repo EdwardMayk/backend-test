@@ -4,7 +4,8 @@
 El sistema se encuentra desplegado y listo para pruebas en:
 * **Frontend Web**: https://sincere-commitment-production-e948.up.railway.app/
 
-* <img width="1356" height="470" alt="image" src="https://github.com/user-attachments/assets/c1691f37-0e60-4e8a-a29b-501c60a6a0a4" />
+<img width="1380" height="555" alt="image" src="https://github.com/user-attachments/assets/5b115363-16aa-4b78-94fb-945daf64b671" />
+
 
 
 
