@@ -4,6 +4,9 @@
 El sistema se encuentra desplegado y listo para pruebas en:
 * **Frontend Web**: https://sincere-commitment-production-e948.up.railway.app/
 
+* <img width="1356" height="470" alt="image" src="https://github.com/user-attachments/assets/c1691f37-0e60-4e8a-a29b-501c60a6a0a4" />
+
+
 
 ## Arquitectura
 * **go-api (Fiber)**: API Orquestadora pública en Go. Procesa rotaciones de matrices, factorización QR, auto-verificación matemática y maneja la seguridad por JWT.
