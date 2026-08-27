@@ -1,6 +1,9 @@
 # Sistema de Procesamiento de Matrices
 
-Sistema distribuido para el procesamiento de matrices matemáticas utilizando dos APIs independientes comunicadas por HTTP.
+## Produccion
+El sistema se encuentra desplegado y listo para pruebas en:
+* **Frontend Web**: https://sincere-commitment-production-e948.up.railway.app/
+
 
 ## Arquitectura
 * **go-api (Fiber)**: API Orquestadora pública en Go. Procesa rotaciones de matrices, factorización QR, auto-verificación matemática y maneja la seguridad por JWT.
